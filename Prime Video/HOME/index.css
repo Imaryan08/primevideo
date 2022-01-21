@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  outline: none;
+}
+
+
+
+
+a{
+    cursor: pointer;
+}
+nav {
+  background-color: #1a242f;
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+.logo img {
+  height: 70px;
+  object-fit: cover;
+  width: 150px;
+}
+.rightMenu {
+  padding: 25px;
+  font-size: 22px;
+}
+.rightMenu a {
+  padding: 5px 15px;
+  color: rgba(242, 244, 246, 0.9);
+}
+.rightMenu label:hover{
+  cursor: pointer;
+}
+.rightMenu a:nth-child(2),
+.rightMenu > a > label {
+  font-size: 18px;
+  padding: 0px 3px;
+}
+.arrowDown {
+  font-size: 12px;
+}
+
+
+/* HEADER */
+header > img {
+  width: 100%;
+  object-fit: contain;
+}
+header {
+  position: relative;
+  min-width: 320px;
+  height: 435px;
+  overflow: hidden;
+  color: white;
+}
+.textOverImage {
+  background: rgba(0, 0, 0, 0);
+  box-shadow:  inset 545px 0px 60px 0px black;
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  top: 48%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+}
+.textOverImage > h1 {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 50px;
+  margin-top: 100px;
+  padding: 20px 0;
+}
+.textOverImage > p {
+  font-size: 24px;
+  line-height: 29px;
+}
+.textOverImage > p:nth-child(4) {
+  font-size: 15px;
+  line-height: 19px;
+  margin-top: 12px;
+}
+.textOverImage > button {
+  width: 280px;
+  background-color: #0f79af;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 22px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+.textOverImage > p:last-child{
+  width: 280px; 
+  font-size: 14px;
+  text-align: center;
+}
+/* Section */
+.section{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
+}
+.favChannels{
+    width: 45%;
+    margin: 30px 20px; 
+}
+.favChannels > h1{
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.favChannels > p{
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 30px;
+    margin-top: 25px;
+    color: #353333;
+}
+.channelBtn{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.channelBtn  img{
+    width: 194px;
+    height: 134px;
+    margin: 5px;
+}
+.channelBtn img:hover{
+  cursor: pointer;
+  box-shadow: 3px 3px 8px black, -3px -3px 8px black;
+}
+
+/* Artcile */
+.membershipHeader{
+    height: 480px;
+}
+#membershipDiv{
+    top: 35%;
+}
+.membershipHead{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+
+}
+.membershipPara{
+    font-size: 21px !important;
+    font-weight: lighter;
+    line-height: 28px;
+    width: 540px;
+    margin-bottom: 30px;
+}
+
+/* FireTv header */
+.firetvHeader > img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .firetvHeader {
+    position: relative;
+    min-width: 320px;
+    height: 480px;
+    overflow: hidden;
+    color: white;
+  }
+  .firetvOverImage {
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+  .firetvHead{
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 50px;
+  }
+  .firetvPara{
+    font-size: 21px;
+    font-weight: lighter;
+    line-height: 28px;
+    width: 540px;
+    margin: 30px 0;
+  }
+  .firetvOverImage > button {
+    width: 280px;
+    background-color: #0f79af;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 22px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Footer */
+
+  footer{
+      background-color: #191919;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .logo > div{
+      text-align: center;
+  }
+  #footerImage{
+      width: 110px;
+      height: 35px;
+      object-fit: contain;
+      text-align: center;
+  }
+  #copyright{
+    display: flex;
+    margin: 2px 3px;
+    opacity: 0.7;
+  }
+  #copyright > p > a{
+      color: #0f79af;
+      font-size: 15px;
+  }
+  #copyright > p{
+    color: #949494;
+    margin-left: 8px;
+    margin-bottom: 20px;
+  }

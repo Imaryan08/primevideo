@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <div class="rightMenu">
+            <a href="">
+                <i class="fas fa-globe"></i>
+                <label for="lang">EN</label>
+                <i class="fas fa-caret-down arrowDown langBtn"></i>
+            </a>
+            <a onclick='signIn()'>Sign In</a>
+        </div>
+    </nav>
+
+    <header>
+        <img src="/images/amazon.jpg" alt="poster">
+        <div class='textOverImage'>
+            <h1>Welcome to Prime Video</h1>
+            <p>Join Prime to watch the latest movies, TV shows and award-winning Amazon Originals</p>
+            <button type='submit'  onclick='signIn()'>Start your 30-day free trial</button>
+            <p>With selected credit or debit cards</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="section">
+            <div class="favChannels">
+                <h1>Your favorite channels all in one place</h1>
+                <p>With Prime Video Channels, find shows and movies from your favorite channels all in one place. Enjoy with an add-on subscription to Channels of your choice</p>
+            </div>
+
+            <div class="channelBtn">
+            </div>
+        </div>
+    </section>
+
+    <header class='membershipHeader'>
+        <img src="/images/prime.jpg" alt="poster">
+        <div class='textOverImage' id='membershipDiv'>
+            <h1 class='membershipHead'>One membership, many benefits</h1>
+            <p class='membershipPara'>Your Prime membership now also includes ad-free music along with unlimited free, fast delivery on eligible items, exclusive access to deals & more.</p>
+            <button type='submit' onclick='signIn()'>Get started</button>
+        </div>
+    </header>
+
+    <header class='firetvHeader'>
+        <img src="/images/firetv.jpg" alt="poster">
+        <div class='firetvOverImage' id='firetvDiv'>
+            <h1 class='firetvHead'>Even better with Fire TV Stick</h1>
+            <p class='firetvPara'>The biggest movies and TV shows are always better on a big screen. Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press the voice button on the remote and say the name of the title you want to watch to find it in seconds.</p>
+            <button type='submit' onclick='signIn()'>Get started</button>
+        </div>
+    </header>
+
+    <header class='membershipHeader'>
+        <img src="/images/familyFriendly.jpg" alt="poster">
+        <div class='textOverImage' id='membershipDiv'>
+            <h1 class='membershipHead'>Family Friendly</h1>
+            <p class='membershipPara'>With easy to use Parental Controls and a dedicated kids page, enjoy secure, ad-free kids entertainment. Kids can enjoy popular TV shows like Peppa Pig, Powerpuff Girls, and Chhota Bheem.</p>
+            <button type='submit' onclick='signIn()'>Get started</button>
+        </div>
+    </header>
+
+    <footer>
+        <div class="logo">
+            <div>
+                <img id= 'footerImage' src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png" alt="logo">
+            </div>
+            <div id="copyright">
+                <p><a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890">Terms and Privacy Notice</a></p>
+                <p><a href="https://www.primevideo.com/help/contact-us?ref_=av_auth_return_redir">Send us feedback</a></p>
+                <p><a href="https://www.amazon.com/gp/help/customer/display.html">Help</a></p>
+                <p>© 1996-2022, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src='index.js'></script>
+</body>
+</html>
+<script>
+    var favChannels = [
+    {img_url : 'https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/LionsgatePlay-426X2946_V1.jpg'},
+    {img_url : 'https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Discovery.jpg'},
+    {img_url : 'https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Erosnow-426X2948_V1.jpg'},
+    {img_url : 'https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/hoichoi-426X2946_V1.jpg'},
+    {img_url : 'https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Docubay-426X2947_V1.jpg'},
+    {img_url : 'https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/ShortsTV-426X2944_V1.jpg'},
+    {img_url : 'https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Mubi-426X2946_V1.jpg'},
+    {img_url : 'https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_MANORAMAMAX.jpg'},
+];
+    localStorage.setItem('favChannels',JSON.stringify(favChannels));
+</script>

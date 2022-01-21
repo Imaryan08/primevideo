@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="channel.css">
+    <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/HOME/index.html">
+                <img src="/images/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <div class="rightMenu">
+            <a href="">
+                <i class="fas fa-globe"></i>
+                <label for="lang">EN</label>
+                <i class="fas fa-caret-down arrowDown langBtn"></i>
+            </a>
+            <a onclick='signIn()'>Sign In</a>
+        </div>
+    </nav>
+
+    <section>
+        <img src="/images/image4.jpg" alt="poster">
+        <div class='textOverImage' id='membershipDiv'>
+            <h1 class='membershipHead'>Get Started</h1>
+            <p class='membershipPara'>To sign up for Prime Video Channels, you must be a Prime member.</p>
+            <p class='steps'><span>1</span> <span class='active'>Step 1: Prime sign up</span></p>
+            <p class='steps'><span>2</span> <span id='light'>Step 2: hoichoi sign up</span></p>
+            <p>Watch exclusive Amazon Originals, popular movies, TV shows, sports, and live event – it's all included with Prime.</p>
+
+            <button type='submit' onclick='signIn()'>Sign up for Prime</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <div class='footerlogo'>
+                <img id= 'footerImage' src="/images/logo.png" alt="logo">
+                <span>|</span>
+                <span> CHANNELS</span>
+            </div>
+            <div id="copyright">
+                <p><a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890">Terms and Privacy Notice</a></p>
+                <p><a href="https://www.primevideo.com/help/contact-us?ref_=av_auth_return_redir">Send us feedback</a></p>
+                <p><a href="https://www.amazon.com/gp/help/customer/display.html">Help</a></p>
+            </div>
+            <div class="copyright">
+                <p class='copy'>© 1996-2022, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script>
+    function signIn(){
+    window.location.href = '/SIGN-IN/signin.html';
+}
+</script>
+</html>
