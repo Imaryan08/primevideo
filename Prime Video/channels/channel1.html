@@ -11,7 +11,7 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="/HOME/index.html">
+            <a onclick="index()"">
                 <img src="/images/logo.png" alt="logo">
             </a>
         </div>
@@ -42,7 +42,7 @@
     <footer>
         <div class="logo">
             <div class='footerlogo'>
-                <img id= 'footerImage' src="/images/logo.png" alt="logo">
+                <img id= 'footerImage' onclick="index()" style="cursor: pointer;" src="/images/logo.png" alt="logo">
                 <span>|</span>
                 <span> CHANNELS</span>
             </div>
@@ -58,9 +58,5 @@
     </footer>
     
 </body>
-<script>
-    function signIn(){
-    window.location.href = '/SIGN-IN/signin.html';
-}
-</script>
+<script src="channel.js"></script>
 </html>
