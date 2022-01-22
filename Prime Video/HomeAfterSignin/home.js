@@ -18,8 +18,19 @@ function signIn() {
     });
   });
   
-  function signIn(price){
-    window.location.href = '/subscription/subscription.html';
+  function subscription(duration){
+    console.log(duration)
+    if(duration === 'freeSubscription'){
+      window.location.href = '/subscription/subscription.html';
+    }else if(duration === 'annualSubscription'){
+      window.location.href = '/subscription/annualSubscription.html';
+    }else if(duration === 'monthlySubscription'){
+      window.location.href = '/subscription/monthlySubscription.html';
+    }else if(duration === 'quarterlySubscription'){
+      window.location.href = '/subscription/quarterlySubscription.html';
+    }
 
   }
+
+
   

@@ -30,8 +30,11 @@ nav {
 }
 
 /* Header */
+.cursor{
+    cursor: pointer;
+}
 header {
-  width: 924px;
+  width: 934px;
   margin: auto;
   height: 86px;
   font-size: 15px;
@@ -55,7 +58,6 @@ header > strong {
   opacity: 0.9;
 }
 header > a {
-  padding-left: 24px;
   color: #1196ab;
 }
 

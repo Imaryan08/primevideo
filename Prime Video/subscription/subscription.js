@@ -1,6 +1,11 @@
 // var res = document.querySelector('input[type="radio"]:checked').value;
 // console.log(document.querySelectorAll('input[name="payment"]'));
 
+function homeAfretSignIn(){
+    window.location.href = '/HomeAfterSignin/home.html';
+}
+
+
 function pay(value){
     if(value === 0){
         document.querySelector('.debit').style.background = '#eff0f3';
@@ -78,4 +83,3 @@ function proceed(){
     }
 }
 
-document.querySelector()
