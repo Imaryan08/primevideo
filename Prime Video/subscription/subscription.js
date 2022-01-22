@@ -38,8 +38,10 @@ function pay(value){
 
         document.querySelector('.container').append(name, card, expiry, submitBtn);
         document.querySelector('.spanContent').innerText = '';
+        document.querySelector('.upi>p').innerText = '';
     }
     else if(value === 1){
+        document.querySelector('.upi>p').innerText = '';
         document.querySelector('.container').innerText = '';
         document.querySelector('.netbanking').style.background = '#fcf5ee';
         var span = document.createElement('span');
@@ -48,6 +50,32 @@ function pay(value){
         document.querySelector('.netbanking').append(span);
     }
     else{
-        
+        document.querySelector('.upi').style.background = '#eff0f3';
+        var text = document.createElement('p');
+        text.innerText = 'Enter your UPI ID';
+        var input = document.createElement('input');
+        document.querySelector('.upi').append(text,input);
+
+        document.querySelector('.container').innerText = '';
+        document.querySelector('.spanContent').innerText = '';
+
+
     }
 }
+
+function proceed(){
+    var otp = prompt('Enter Your OTP');
+    while(otp !== '9637415465465'){
+        if(otp === '963741'){
+            window.location.href = '/tvshows/tvShows.html';
+            break;
+        }else if(otp = ''){
+            break;
+        }else{
+            alert('Wrong OTP');
+            var otp = prompt('Enter Your OTP');
+        }
+    }
+}
+
+document.querySelector()

@@ -149,6 +149,21 @@ select:hover{
     font-size: 12px;
     background-color: #eff0f3;
 }
+.upi{
+    padding: 10px 20px 10px 10px;;
+}
+.upi span{
+    padding-left: 10px;
+}
+.upi > p{
+    font-size: 16px;
+    color: gray;
+    margin: 10px 20px 0 30px;
+}
+.upi > input:nth-child(4){
+    margin: 5px 30px;
+    padding: 5px;
+}
 /* More payment options */
 .morePaymentOption > p{
     font-size: 21px;
@@ -184,6 +199,7 @@ select:hover{
     align-items: flex-end;
 }
 .btn > button{
+    cursor: pointer;
     background-color: rgb(15,121,175);
     font-size: 17px;
     font-weight: 400;

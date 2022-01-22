@@ -23,7 +23,7 @@ img{
     border: 1px solid #ddd;
     margin: auto;
     border-radius: 5px;
-    width: 25%;
+    width: 27%;
     padding: 10px 25px;
     display: flex;
     flex-direction: column;
@@ -47,9 +47,6 @@ a{
     color: #0066c0;
     cursor: pointer;
 }
-.forgetPass{
-    font-weight: lighter;
-}
 input{
     transition: all .1s linear;
 }
@@ -70,6 +67,16 @@ input{
 .passLabel{
     display: flex;
     justify-content: space-between;
+}
+.warn{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+.warn > span > i{
+    color:lightseagreen;
+    font-size: 18px;
+    font-family: monospace;
 }
 .btn{
     margin: 10px 0;
@@ -96,7 +103,7 @@ button{
     margin-top: 10px;
 }
 .keepSignIn{
-    margin: 20px 5px;
+    margin: 20px 0px;
     /* border: 1px solid red; */
 }
 .keepSignIn > a,label{
@@ -153,12 +160,12 @@ i{
     justify-content: center;
 }
 .terms > p{
-    margin: 5px 10px;
+    margin: 5px 0px;
 }
 .footer{
     display: flex;
     flex-direction: column; 
-    padding-top: 15px;
+    padding: 15px 0 30px 0 ;
     border-top: 1px  #CCC solid;
     box-shadow: outset 0px -1px 50px 1px lightgray;
     width: 40%;

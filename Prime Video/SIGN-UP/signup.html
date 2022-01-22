@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="signup.css">
     <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,8 +17,11 @@
 
         <!-- Signin Box -->
         <div class="signInBox">
-            <h1>Sign-In</h1>
-
+            <h1>Create account</h1>
+            <div class="input email">
+                <label for="email" class='inputText'>Your name</label>
+                <input type="text" name="email" class='data' id="email">
+            </div>
             <div class="input email">
                 <label for="email" class='inputText'>Email or mobile phone number</label>
                 <input type="text" name="email" class='data' id="email">
@@ -27,18 +30,25 @@
             <div class="input password">
                 <div class="passLabel">
                     <label for="password" class='inputText'>Password</label>
-                    <label for="forgetPass"><a href="#" class='forgetPass'>Forgot your password?</a></label>
+                </div>
+                <input type="password" name="password" class='data' id="password" placeholder="At least 6 charcters">
+            </div>
+            <p class='warn'> <span><i>i</i></span> passwords must be At least 6 characters</p>
+
+            <div class="input password">
+                <div class="passLabel">
+                    <label for="password" class='inputText'>Re-enter Password</label>
                 </div>
                 <input type="password" name="password" class='data' id="password">
             </div>
 
             <div class="btn">
-                <button type='submit' class='signInBtn'>Sign-In</button>
+                <button type='submit' class='signInBtn'>Create your Amazon account</button>
             </div>
 
-            <div class="terms">
+            <div class="terms"> 
                 <p>
-                    By continuing, you agree to Amazon's 
+                    By creating an account, you agree to Amazon's 
                     <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=508088">Conditions of Use</a>
                     and
                     <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=468496">Privacy Notice.</a>
@@ -46,20 +56,10 @@
             </div>
 
             <div class="keepSignIn">
-                <input type="checkbox">
-                <label for="checkbox">Keep me signed in. </label> 
-                <a href="">Details</a><i class="fas fa-caret-down"></i>
+                <label >Already have an account 
+                    <a onclick="signinPage()">Sign-In</a><i class="fas fa-caret-right"></i>
+                </label> 
             </div>
-
-            <div class="newToAmazon">
-                <h5 class='noSpan'>New to Amazon?</h5>
-
-            </div>
-
-            <div class="signupPage">
-                <button type='submit' onclick="signupPage()">Create your Amazon  account</button>
-            </div>
-
         </div>
     </div>
     <footer>
@@ -74,6 +74,6 @@
             </div>
         </div>
     </footer>
+    <script src="signup.js"></script>
 </body>
 </html>
-<script src="signin.js"></script>

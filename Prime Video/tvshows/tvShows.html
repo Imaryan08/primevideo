@@ -272,7 +272,6 @@
   // });  
 
   var link = document.querySelectorAll('.carousel-item');
-  console.log(link);
 
   for(var i = 1; i < link.length; i++){
     if(i === 1){
@@ -282,6 +281,10 @@
     }else if(i === 2){
       link[i].addEventListener('click',function(){
           window.location.href = 'https://www.facebook.com'; 
+        });
+    }else if(i === 3){
+      link[i].addEventListener('click',function(){
+          window.location.href = 'https://www.primevideo.com'; 
         });
     }
 
