@@ -18,15 +18,3 @@ favChannels.map(function (elem, index) {
   });
 });
 
-// function createPage(){
-//     // Section
-//     var section = document.createElement('section');
-//     // Image
-//     var image = document.createElement('img');
-//     image.setAttribute('src','');
-
-//     // textOverImage
-//     var textOverImage = document.createElement('div');
-//     textOverImage.setAttribute('id','membershipDiv');
-
-// }
