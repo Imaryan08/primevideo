@@ -39,11 +39,32 @@
                 <input type="radio" name="payment" value='debit' onclick = "pay(0)">
                 <span>Add Debit/Credit/ATM card</span>
                 <p>Save your Mastercard and VISA cards per new RBI guidelines. <a href=""> Learn more <i class="fas fa-angle-down"></i></a></p>
-                <div>
+                <div class='cardImage'>
                     <img src="/images/atm.png" alt="">
                 </div>
+                <!-- Card details appear after selecting card option -->
+                <div class="debitContainer">
                 <div class="container">
+                    <div class="name">
+                        <p>Name on card</p>
+                        <input type="text" name="cardName" id="cardName">
+                    </div>
 
+                    <div class="cardNumber">
+                        <p>Card number</p>
+                        <input type="number" name="cardNumber" id="cardNumber">
+                    </div>
+
+                    <div class="expiry">
+                        <p>Expiration date</p>
+                        <input type="month" name="expiryDate" id="expiryDate">
+                    </div>
+
+                    <div class='addCard'>
+                        <p></p>
+                        <button id='addCard'>Add your card</button>
+                    </div>
+                </div>
                 </div>
             </div>
 
@@ -59,11 +80,21 @@
                     <option value="canara">Canara bank</option>
                     <option value="federal">Federal Bank</option>
                 </select></p>
+                <p class='netbankingOption'>
+                    <i class='fas fa-exclamation-circle' style='font-size:18px;color:#0f79af'></i>
+                   <span> For faster payment and instant refund, please use UPI 
+                </span>
+                </p>
             </div>
 
             <div class="upi">
                 <input type="radio" name="payment" value='upi' onclick = "pay(2)">
                 <span>Other UPI apps</span>
+                <div class="upiOption">
+                    <p>Enter you UPI ID</p> 
+                    <input type="text" name="upiID" id="upiID" placeholder="Ex: MobileNumber@upi">
+                    <button id='verify'>Verify</button>
+                </div>
             </div>
         </div>
     </section>
@@ -73,7 +104,11 @@
         <div>
             <div>
                 <p>Gift Cards and Promotional Codes</p>
-                <p><i class="fas fa-angle-down"></i><a href=""> Enter a gift card or promotional code</a></p>
+                <p><i class="fas fa-angle-down"></i><a href="" id='promoCode'> Enter a gift card or promotional code</a></p>
+                <div class="promoInput">
+                    <input type="text" name="promocodeInput" id="promoCodeInput" placeholder="Enter Code">
+                    <button id='promoCheck'>Apply</button>
+                </div>
             </div>
 
             <div>
@@ -81,7 +116,7 @@
             </div>
         </div>
     </section>
-
+ 
     <section class='btn'>
         <button type='submit' onclick='proceed()' >Continue</button>
         <p>---------------------------  Or  ----------------------------</p>

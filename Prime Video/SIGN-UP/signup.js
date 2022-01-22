@@ -28,7 +28,7 @@ createAccBtn.addEventListener('click',function(){
     {
         if(password.length < 6)
         {
-            alert('Your password is too short');
+            // alert('Your password is too short');
             errorBox.style.display = 'block';
             nameErr.style.display = 'none';
             emailErr.style.display = 'none';
@@ -38,7 +38,7 @@ createAccBtn.addEventListener('click',function(){
         }
         else if(reEnterPass !== password)
         {
-            alert('Password must match');
+            // alert('Password must match');
             errorBox.style.display = 'block';
             passErr.style.display = 'none';
             nameErr.style.display = 'none';
@@ -62,7 +62,7 @@ createAccBtn.addEventListener('click',function(){
     }
     
     else if(!name.length && !email.length && !password.length && !reEnterPass.length){
-        alert('Please Fill all the filelds');
+        // alert('Please Fill all the filelds');
 
         errorBox.style.display = 'block';
         nameErr.style.display = 'block';
@@ -73,7 +73,7 @@ createAccBtn.addEventListener('click',function(){
 
     }
     else if(name.length === 0){
-        alert('Please Enter Your Name');
+        // alert('Please Enter Your Name');
         errorBox.style.display = 'block';
         nameErr.style.display = 'block';
         emailErr.style.display = 'none';
@@ -84,7 +84,7 @@ createAccBtn.addEventListener('click',function(){
         
     }
     else if(email.length === 0){
-        alert('Please Enter Your email');
+        // alert('Please Enter Your email');
         errorBox.style.display = 'block';
         emailErr.style.display = 'block';
         nameErr.style.display = 'none';
@@ -95,7 +95,7 @@ createAccBtn.addEventListener('click',function(){
 
     }
     else if(password.length === 0){
-        alert('Please Enter Your password');
+        // alert('Please Enter Your password');
         errorBox.style.display = 'block';
         passErr.style.display = 'block';
         nameErr.style.display = 'none';
@@ -107,7 +107,7 @@ createAccBtn.addEventListener('click',function(){
 
     }
     else if(reEnterPass.length === 0){
-        alert('Password must match');
+        // alert('Password must match');
         errorBox.style.display = 'block';
         passErr.style.display = 'none';
         nameErr.style.display = 'none';
