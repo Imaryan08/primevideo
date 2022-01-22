@@ -1,71 +1,7 @@
 
-function homeAfretSignIn(){
+function homeAfterSignIn(){
     window.location.href = '/HomeAfterSignin/home.html';
 }
-
- 
-// function pay(value){
-//     if(value === 0){
-//         document.querySelector('.debit').style.background = '#eff0f3';
-
-//         var name = document.createElement('div');
-//         var namePara = document.createElement('p');
-//         namePara.innerText = 'Name on card';
-//         var nameInput = document.createElement('input');
-//         name.append(namePara, nameInput);
-
-//         var card = document.createElement('div');
-//         var cardPara = document.createElement('p');
-//         cardPara.innerText = 'Card number';
-//         cardPara.innerText = 'Card number';
-//         var cardInput = document.createElement('input');
-//         cardInput.setAttribute('class','cardNumber');
-//         card.append(cardPara, cardInput);
-
-//         var expiry = document.createElement('div');
-//         var expiryPara = document.createElement('p');
-//         expiryPara.innerText = 'Expiration date';
-//         var expiryInput = document.createElement('input');
-//         expiryInput.setAttribute('type','month');
-//         expiryInput.setAttribute('class','expiry');
-//         expiry.append(expiryPara, expiryInput);
-
-//         var submitBtn = document.createElement('div');
-//         var submitPara = document.createElement('p');
-//         submitPara.innerText = 'submit';
-//         submitPara.style.visibility = 'hidden';
-//         var submit = document.createElement('button');
-//         submit.setAttribute('type','submit');
-//         submit.setAttribute('class','submitBtn');
-//         submit.innerText = 'Add your card';
-//         submitBtn.append(submitPara,submit);
-
-//         document.querySelector('.container').append(name, card, expiry, submitBtn);
-//         document.querySelector('.spanContent').innerText = '';
-//         document.querySelector('.upi>p').innerText = '';
-//     }
-//     else if(value === 1){
-//         document.querySelector('.upi>p').innerText = '';
-//         document.querySelector('.container').innerText = '';
-//         document.querySelector('.netbanking').style.background = '#fcf5ee';
-//         var span = document.createElement('span');
-//         span.setAttribute('class','spanContent');
-//         span.innerHTML = '<i class="fas fa-exclamation-circle"></i> For faster payment and instant refund, please use UPI ';
-//         document.querySelector('.netbanking').append(span);
-//     }
-//     else{
-//         document.querySelector('.upi').style.background = '#eff0f3';
-//         var text = document.createElement('p');
-//         text.innerText = 'Enter your UPI ID';
-//         var input = document.createElement('input');
-//         document.querySelector('.upi').append(text,input);
-
-//         document.querySelector('.container').innerText = '';
-//         document.querySelector('.spanContent').innerText = '';
-
-
-//     }
-// }
 
 function pay(value){
     if(value === 0){
@@ -92,15 +28,71 @@ function pay(value){
     }
 }
 
+document.querySelector('#promoCode').addEventListener('click',function(){
+    document.querySelector('.promoInput').style.display = 'block';
+    document.querySelector('.caretDown').setAttribute('class','fas fa-angle-up caretDown');
+});
 
+document.querySelector('#promoCode').addEventListener('dblclick',function(){
+    document.querySelector('.promoInput').style.display = 'none';
+    document.querySelector('.caretDown').setAttribute('class','fas fa-angle-down caretDown');
+});
 
+// Enabling Continue button after clicking on upi verify
+document.querySelector('#verify').addEventListener('click',function(){
+    var upiID = document.querySelector('#upiID').value;
+    if(upiID === '9643579827@ybl' || upiID === 'imaryan08@ybl' || upiID === 'rampukar@oksbi' || upiID === '8826485127@axis'){
+        alert(`${upiID} is Verified`);
+        var continueBtn = document.querySelector('.continueBtn');
+        continueBtn.style.opacity = '1';
+        continueBtn.removeAttribute('disabled');
+    }else{
+        alert(`${upiID} is Invalid`);
+    }
+});
+
+// Enabling Continue button after adding  debit/credit card
+document.querySelector('#addDebitCard').addEventListener('click',function(){
+    var userName = JSON.parse(localStorage.getItem('userName')) || '';
+    var cardName = document.querySelector('#cardName').value;
+    var cardNumber = document.querySelector('#cardNumber').value;
+    var expiryDate = document.querySelector('#expiryDate').value;
+
+    // console.log(cardName,cardNumber,expiryDate)
+    if(cardNumber === '964357982788' && cardName === 'Rampukar' && expiryDate === '2022-02'){
+        alert(`${userName} your card ${cardNumber} is verified`);
+        var continueBtn = document.querySelector('.continueBtn');
+        continueBtn.style.opacity = '1';
+        continueBtn.removeAttribute('disabled');
+    }else{
+        alert(`${userName} your card ${cardNumber} is Invalid`);
+    }
+});
+
+// promocode check
+document.querySelector('#promoCheck').addEventListener('click',function(){
+    var promoCodeInput = document.querySelector('#promoCodeInput').value;
+    if(promoCodeInput){
+        if(promoCodeInput === 'masai10'){
+            alert(`You'll get 10 Days extra Subscription. Complete Your Payment!!!`);
+        }else{
+            alert('Promocode is Invalid');
+        }
+    }else{
+        alert('Enter Promocode');
+    }
+});
+
+//Continue button for OTP
 function proceed(){
+    var userName = JSON.parse(localStorage.getItem('userName')) || '';
     var otp = prompt('Enter Your OTP');
     while(otp !== '9637415465465'){
         if(otp === '963741'){
+            alert(`Paymemnt is Successful!! We have received your payment ${userName}. Thank you and Enjoy watching amazon prime `);
             window.location.href = '/tvshows/tvShows.html';
             break;
-        }else if(otp = ''){
+        }else if(otp == 'null' || otp == '' || otp == null){
             break;
         }else{
             alert('Wrong OTP');

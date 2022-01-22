@@ -42,30 +42,31 @@
                 </div>
                 <!-- Card details appear after selecting card option -->
                 <div class="debitContainer">
-                <div class="container">
-                    <div class="name">
-                        <p>Name on card</p>
-                        <input type="text" name="cardName" id="cardName">
-                    </div>
+                    <div class="container">
+                        <div class="name">
+                            <p>Name on card</p>
+                            <input type="text" name="cardName" id="cardName">
+                        </div>
 
-                    <div class="cardNumber">
-                        <p>Card number</p>
-                        <input type="number" name="cardNumber" id="cardNumber">
-                    </div>
+                        <div class="cardNumber">
+                            <p>Card number</p>
+                            <input type="number" name="cardNumber" id="cardNumber">
+                        </div>
 
-                    <div class="expiry">
-                        <p>Expiration date</p>
-                        <input type="month" name="expiryDate" id="expiryDate">
-                    </div>
+                        <div class="expiry">
+                            <p>Expiration date</p>
+                            <input type="month" name="expiryDate" id="expiryDate">
+                        </div>
 
-                    <div class='addCard'>
-                        <p></p>
-                        <button id='addCard'>Add your card</button>
+                        <div class='addCard'>
+                            <p></p>
+                            <button id='addDebitCard'>Add your card</button>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
 
+            <!-- Netbanking -->
             <div class="netbanking">
                 <input type="radio" name="payment" value='netbanking'  onclick = "pay(1)">
                 <span>Net Banking</span>
@@ -85,6 +86,7 @@
                 </p>
             </div>
 
+            <!-- UPI -->
             <div class="upi">
                 <input type="radio" name="payment" value='upi' onclick = "pay(2)">
                 <span>Other UPI apps</span>
@@ -94,6 +96,7 @@
                     <button id='verify'>Verify</button>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -102,12 +105,12 @@
         <div>
             <div>
                 <p>Gift Cards and Promotional Codes</p>
-                <p><i class="fas fa-angle-down"></i><a href="" id='promoCode'> Enter a gift card or promotional code</a></p>
+                <p><i class="fas fa-angle-down caretDown"></i><span id='promoCode'> Enter a gift card or promotional code</span></p>
                 <div class="promoInput">
                     <input type="text" name="promocodeInput" id="promoCodeInput" placeholder="Enter Code">
                     <button id='promoCheck'>Apply</button>
                 </div>
-            </div>
+            </div>  
 
             <div>
                 <img src="/images/card.gif" alt="">
@@ -116,7 +119,7 @@
     </section>
  
     <section class='btn'>
-        <button type='submit' onclick='proceed()' >Continue</button>
+        <button type='submit' onclick='proceed()' class='continueBtn' disabled>Continue</button>
         <p>---------------------------  Or  ----------------------------</p>
         <p> <a href=""> Join Prime Monthly</a> with auto-renew(select credit and debit cards are eligible)</p>
     </section>
@@ -124,7 +127,7 @@
     <footer>
         <div class="logo">
             <div>
-                <img  class= 'cursor' onclick='homeAfretSignIn()' id= 'footerImage' src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png" alt="logo">
+                <img  class= 'cursor' onclick='homeAfterSignIn()' id= 'footerImage' src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png" alt="logo">
             </div>
             <div id="copyright">
                 <p><a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890">Terms and Privacy Notice</a></p>

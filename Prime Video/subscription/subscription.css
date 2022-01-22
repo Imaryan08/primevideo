@@ -134,7 +134,7 @@
       font-size: 15px;
       font-weight: 600;
   }
-  #addCard{
+  #addDebitCard{
       background-color: #0f79af;
       font-size: 12px;
       font-weight: 400;
@@ -163,7 +163,7 @@
           margin: 8px 0 0 23px;
           font-size: 15px;
           color: #0F1111;
-          /* display: none; */
+          display: none;
       }
   .netbankingOption > span{
       background-color: #e0f1fa;
@@ -230,6 +230,9 @@
   .morePaymentOption i{
       font-size: 14px;
   }
+  .promoInput{
+      display: none;
+  }
   .promoInput input{
       padding: 7px;
       width: 60%;
@@ -241,6 +244,15 @@
   }
   .promoInput input:focus{
       border: 2px solid #0f79af;
+  }
+  #promoCode{
+      font-size: 14px;
+      color: #007185;
+  }
+  #promoCode:hover{
+      color: #C7511F;
+      text-decoration: underline;
+      cursor: pointer;
   }
   #promoCheck{
       background-color: #0f79af;
@@ -266,7 +278,7 @@
       background-color: rgb(15,121,175);
       font-size: 17px;
       font-weight: 400;
-      color: #fff;
+      color: #000;
       min-width: 250px;
       min-height: 50px;
       border: none;
@@ -274,6 +286,7 @@
       border-radius: 2px;
       float: right;
       margin-bottom: 8px;
+      opacity: 0.3;
   }
   .btn p{
       width: 250px;
