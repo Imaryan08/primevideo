@@ -272,12 +272,19 @@
   // });  
 
   var link = document.querySelectorAll('.carousel-item');
-  // console.log(link);
-  for(var i = 0; i < link.length; i++){
-    link[i].addEventListener('click',function(){
-      window.location.href = 'https://www.google.com'; 
+  console.log(link);
+
+  for(var i = 1; i < link.length; i++){
+    if(i === 1){
+      link[i].addEventListener('click',function(){
+        window.location.href = 'https://www.google.com'; 
+      });
+    }else if(i === 2){
+      link[i].addEventListener('click',function(){
+          window.location.href = 'https://www.facebook.com'; 
+        });
+    }
 
   }
-  });
   
 </script>

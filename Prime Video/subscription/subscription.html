@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="subscription.css">
+    <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img src="/images/sublogo.png" alt="logo">
+            <h4>Watch now, cancel anytime</h4>
+            <h3>Start your membership today</h3>
+        </div>
+
+        <div class="right">
+            <img src="/images/subright.png" alt="image">
+        </div>
+    </nav>
+
+    <header>
+        <i class="fas fa-exclamation-circle"></i>
+        You will be charged 
+        <strong>₹1,499</strong>
+        for a year of Prime. Your Prime membership auto-renews every year if purchased using any of these 
+        <a href="">eligible credit or debit cards</a>
+    </header>
+
+    <section>
+        <p>Select a payment method</p>
+        <div class='paymentOption'>
+            <p class='underline'>More payment options</p>
+            <div class="debit">
+                <input type="radio" name="payment" value='debit' onclick = "pay(0)">
+                <span>Add Debit/Credit/ATM card</span>
+                <p>Save your Mastercard and VISA cards per new RBI guidelines. <a href=""> Learn more <i class="fas fa-angle-down"></i></a></p>
+                <div>
+                    <img src="/images/atm.png" alt="">
+                </div>
+                <div class="container">
+
+                </div>
+            </div>
+
+            <div class="netbanking">
+                <input type="radio" name="payment" value='netbanking'  onclick = "pay(1)">
+                <span>Net Banking</span>
+                <p><select name="netbanking" id="netbanking">
+                    <option value="">Choose a bank</option>
+                    <option value="sbi">State Bank of India</option>
+                    <option value="hdfc">HDFC Bank</option>
+                    <option value="icici">ICICI Bank</option>
+                    <option value="axis">Axis bank</option>
+                    <option value="canara">Canara bank</option>
+                    <option value="federal">Federal Bank</option>
+                </select></p>
+            </div>
+
+            <div class="upi">
+                <input type="radio" name="payment" value='upi' onclick = "pay(2)">
+                <span>Other UPI apps</span>
+            </div>
+        </div>
+    </section>
+
+    <section class='morePaymentOption'>
+        <p>More payment options</p>
+        <div>
+            <div>
+                <p>Gift Cards and Promotional Codes</p>
+                <p><i class="fas fa-angle-down"></i><a href=""> Enter a gift card or promotional code</a></p>
+            </div>
+
+            <div>
+                <img src="/images/card.gif" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class='btn'>
+        <button type='submit'>Continue</button>
+        <p>---------------------------  Or  ----------------------------</p>
+        <p> <a href=""> Join Prime Monthly</a> with auto-renew(select credit and debit cards are eligible)</p>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <div>
+                <img id= 'footerImage' src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png" alt="logo">
+            </div>
+            <div id="copyright">
+                <p><a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890">Terms and Privacy Notice</a></p>
+                <p><a href="https://www.primevideo.com/help/contact-us?ref_=av_auth_return_redir">Send us feedback</a></p>
+                <p><a href="https://www.amazon.com/gp/help/customer/display.html">Help</a></p>
+                <p>© 1996-2022, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="subscription.js"></script>
+</body>
+</html>

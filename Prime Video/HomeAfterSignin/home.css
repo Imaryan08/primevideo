@@ -67,7 +67,7 @@
   header {
     position: relative;
     min-width: 320px;
-    height: 529px;
+    height: 100%;
     overflow: hidden;
     color: white;
   }
@@ -86,16 +86,17 @@
     font-weight: 400;
     line-height: 50px;
     margin-top: 100px;
-    padding: 20px 0;
   }
-  .textOverImage > p {
+  .textOverImage > p:nth-child(2) {
     font-size: 24px;
     line-height: 29px;
+    width: 596px;
+    text-align: left;
   }
-  .textOverImage > p:nth-child(4) {
+  .textOverImage > p {
     font-size: 15px;
     line-height: 19px;
-    margin-top: 12px;
+    margin-top: 10px;
   }
   .textOverImage > button {
     width: 280px;
@@ -103,13 +104,13 @@
     font-size: 18px;
     font-weight: 500;
     padding: 14px 22px;
-    margin-top: 20px;
+    margin-top: 18px;
     border: none;
     border-radius: 3px;
     color: #fff;
     cursor: pointer;
   }
-  .textOverImage > p:last-child,.textOverImage > p:nth-child(4){
+  .textOverImage > p{
     width: 280px; 
     font-size: 14px;
     text-align: center;

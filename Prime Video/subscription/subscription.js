@@ -1,0 +1,53 @@
+// var res = document.querySelector('input[type="radio"]:checked').value;
+// console.log(document.querySelectorAll('input[name="payment"]'));
+
+function pay(value){
+    if(value === 0){
+        document.querySelector('.debit').style.background = '#eff0f3';
+
+        var name = document.createElement('div');
+        var namePara = document.createElement('p');
+        namePara.innerText = 'Name on card';
+        var nameInput = document.createElement('input');
+        name.append(namePara, nameInput);
+
+        var card = document.createElement('div');
+        var cardPara = document.createElement('p');
+        cardPara.innerText = 'Card number';
+        var cardInput = document.createElement('input');
+        cardInput.setAttribute('class','cardNumber');
+        card.append(cardPara, cardInput);
+
+        var expiry = document.createElement('div');
+        var expiryPara = document.createElement('p');
+        expiryPara.innerText = 'Expiration date';
+        var expiryInput = document.createElement('input');
+        expiryInput.setAttribute('type','month');
+        expiryInput.setAttribute('class','expiry');
+        expiry.append(expiryPara, expiryInput);
+
+        var submitBtn = document.createElement('div');
+        var submitPara = document.createElement('p');
+        submitPara.innerText = 'submit';
+        submitPara.style.visibility = 'hidden';
+        var submit = document.createElement('button');
+        submit.setAttribute('type','submit');
+        submit.setAttribute('class','submitBtn');
+        submit.innerText = 'Add your card';
+        submitBtn.append(submitPara,submit);
+
+        document.querySelector('.container').append(name, card, expiry, submitBtn);
+        document.querySelector('.spanContent').innerText = '';
+    }
+    else if(value === 1){
+        document.querySelector('.container').innerText = '';
+        document.querySelector('.netbanking').style.background = '#fcf5ee';
+        var span = document.createElement('span');
+        span.setAttribute('class','spanContent');
+        span.innerHTML = '<i class="fas fa-exclamation-circle"></i> For faster payment and instant refund, please use UPI ';
+        document.querySelector('.netbanking').append(span);
+    }
+    else{
+        
+    }
+}

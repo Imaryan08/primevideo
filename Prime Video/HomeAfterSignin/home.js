@@ -18,16 +18,8 @@ function signIn() {
     });
   });
   
-  // function createPage(){
-  //     // Section
-  //     var section = document.createElement('section');
-  //     // Image
-  //     var image = document.createElement('img');
-  //     image.setAttribute('src','');
-  
-  //     // textOverImage
-  //     var textOverImage = document.createElement('div');
-  //     textOverImage.setAttribute('id','membershipDiv');
-  
-  // }
+  function signIn(price){
+    window.location.href = '/subscription/subscription.html';
+
+  }
   

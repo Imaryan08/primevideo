@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  outline: none;
+}
+/* Navbar */
+nav {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.left {
+  padding: 30px 220px;
+}
+.left > h4 {
+  font-size: 21px;
+  font-weight: 400;
+  color: #aaa;
+  margin-top: 10px;
+}
+.left > h3 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* Header */
+header {
+  width: 924px;
+  margin: auto;
+  height: 86px;
+  font-size: 15px;
+  line-height: 20px;
+  border-left-width: 12px;
+  border-style: solid;
+  border-color: #1196ab;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  padding: 14px 18px;
+  margin-top: 25px;
+  color: gray;
+}
+header > i {
+  color: #1196ab;
+  font-size: 20px;
+}
+header > strong {
+  color: #000;
+  opacity: 0.9;
+}
+header > a {
+  padding-left: 24px;
+  color: #1196ab;
+}
+
+section {
+    width: 924px;
+    margin: auto;
+}
+section > p{
+    font-size: 24px;
+    font-weight: 400px;
+    margin: 20px 0 12px 0;
+}
+
+section .paymentOption{
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+.paymentOption > hr{
+    color: lightgray;
+}
+.paymentOption .underline{
+    font-size: 18px;
+    font-weight: 400px;
+    padding: 5px 0;
+    border-bottom: 1px solid lightgray;
+}
+.paymentOption > div{
+    margin: 20px 0;
+}
+.debit{
+    padding: 10px 10px 20px 10px;
+}
+.debit span{
+    padding-left: 10px;
+}
+.debit p,.debit img{
+    padding: 10px 26px;
+    color: #595656;
+    font-size: 15px;
+}
+.debit div{
+    width: 340px;
+    overflow: hidden;
+}
+.debit .container{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+.container > div{
+    display: flex;
+    flex-direction: column;
+}
+.container > div > input{
+    padding: 5px;
+}
+.container > div > input{
+    margin-left: 25px;
+}
+.container .expiry{
+    padding: 2px 0px;
+    width: 140px;
+}
+.submitBtn{
+    background-color: rgb(15,121,175);
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    width: 100px;
+    min-height: 30px;
+    border: none;
+    border-radius: 8px;
+}
+select{
+    font-size: 13px;
+    width: 125px;
+    color: gray;
+    padding: 8px;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: none;
+}
+select:hover{
+    border: 2px solid rgba(17, 150, 171, 0.5);
+}
+.netbanking{
+    padding: 10px 10px 20px 10px;
+}
+.netbanking > span{
+    padding-left: 10px;
+    font-size: 12px;
+    background-color: #eff0f3;
+}
+/* More payment options */
+.morePaymentOption > p{
+    font-size: 21px;
+    font-weight: 400px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid lightgray;
+}
+.morePaymentOption > div{
+    display: flex;
+    justify-content: space-between;
+}
+.morePaymentOption > div > div > p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(15,17,17);
+    padding: 10px 0 3px 0;
+}
+.morePaymentOption a{
+    font-size: 14px;
+}
+.morePaymentOption a:hover{
+    color: rgb(199,81,31);
+    text-decoration: underline;
+}
+.morePaymentOption i{
+    font-size: 14px;
+}
+/* Continue Button */
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.btn > button{
+    background-color: rgb(15,121,175);
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    min-width: 250px;
+    min-height: 50px;
+    border: none;
+    margin: 15px 0;
+    border-radius: 2px;
+    float: right;
+    margin-bottom: 8px;
+}
+.btn p{
+    width: 250px;
+    font-size: 12px;
+    margin: 5px;
+    text-align: center;
+    color: gray;
+}
+.btn a{
+    color: #007185;
+}
+.btn a:hover{
+    color: #90dffe;
+}
+ /* Footer */
+
+ footer{
+    background-color: #191919;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo > div{
+    text-align: center;
+}
+#footerImage{
+    width: 110px;
+    height: 35px;
+    object-fit: contain;
+    text-align: center;
+}
+#copyright{
+  display: flex;
+  margin: 2px 3px;
+  opacity: 0.7;
+}
+#copyright > p > a{
+    color: #0f79af;
+    font-size: 15px;
+}
+#copyright > p{
+  color: #949494;
+  margin-left: 8px;
+  margin-bottom: 20px;
+}
