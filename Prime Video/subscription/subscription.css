@@ -272,6 +272,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
+      margin-bottom: 20px;
   }
   .btn > button{
       cursor: pointer;

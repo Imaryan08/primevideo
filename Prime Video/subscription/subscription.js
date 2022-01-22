@@ -45,6 +45,7 @@ document.querySelector('#verify').addEventListener('click',function(){
         alert(`${upiID} is Verified`);
         var continueBtn = document.querySelector('.continueBtn');
         continueBtn.style.opacity = '1';
+        continueBtn.style.color = '#fff';
         continueBtn.removeAttribute('disabled');
     }else{
         alert(`${upiID} is Invalid`);
@@ -63,6 +64,7 @@ document.querySelector('#addDebitCard').addEventListener('click',function(){
         alert(`${userName} your card ${cardNumber} is verified`);
         var continueBtn = document.querySelector('.continueBtn');
         continueBtn.style.opacity = '1';
+        continueBtn.style.color = '#fff';
         continueBtn.removeAttribute('disabled');
     }else{
         alert(`${userName} your card ${cardNumber} is Invalid`);
@@ -89,7 +91,7 @@ function proceed(){
     var otp = prompt('Enter Your OTP');
     while(otp !== '9637415465465'){
         if(otp === '963741'){
-            alert(`Paymemnt is Successful!! We have received your payment ${userName}. Thank you and Enjoy watching amazon prime `);
+            alert(`Paymemnt is Successful!! We have received your payment ${userName}, Thank you and Enjoy watching amazon prime `);
             window.location.href = '/tvshows/tvShows.html';
             break;
         }else if(otp == 'null' || otp == '' || otp == null){
