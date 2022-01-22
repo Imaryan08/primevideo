@@ -37,6 +37,7 @@
     color: rgba(242, 244, 246, 0.9);
   }
   .rightMenu label:hover{
+    cursor: pointer;
   }
   .rightMenu > a > label {
     font-size: 18px;
@@ -46,8 +47,9 @@
     font-size: 12px;
   }
   .rightMenu > img{
-    width: 32px;
-    height: 32px;
+    margin-top: 3px;
+    width: 30px;
+    height: 30px;
   }
   .rightMenu > span{
     color: white;

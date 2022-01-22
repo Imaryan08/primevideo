@@ -19,6 +19,50 @@ img{
     margin: 15px 90px 15px ;
     cursor: pointer;
 }
+.errorBox{
+    width: 27%;
+    display: none;   
+}
+.errorList{
+    list-style-type: none;
+    /* display: none; */
+}
+.nameErr,.emailErr,.passErr,.rePassErr,.passShortErr{
+    display: none;
+}
+.nameErr{
+    display: none;
+}
+
+.error{
+    margin: 20px 0;
+    min-height: 50px;
+    width: 100%;
+    border: 1px solid #c40000;
+    box-shadow: 0 0 0 4px #fcf4f4 inset;
+    border-radius: 4px;
+    padding: 14px 18px 14px 20px;
+    display: flex;
+}
+.error span{
+    margin-left: 15px;
+}
+.error span > ul{
+    /* margin-left: 10px; */
+    padding-top: 5px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #111111;
+}
+
+.error  h4{
+    color: #c40000;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+
+}
+
 .signInBox{
     border: 1px solid #ddd;
     margin: auto;
@@ -49,6 +93,9 @@ a{
 }
 input{
     transition: all .1s linear;
+}
+input:focus{
+    border: 2px solid #e98216;
 }
 .data{
     width: 100%;

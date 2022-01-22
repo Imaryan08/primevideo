@@ -21,7 +21,7 @@ function signIn() {
   function subscription(duration){
     console.log(duration)
     if(duration === 'freeSubscription'){
-      window.location.href = '/subscription/subscription.html';
+      window.location.href = '/subscription/freeSubscription.html';
     }else if(duration === 'annualSubscription'){
       window.location.href = '/subscription/annualSubscription.html';
     }else if(duration === 'monthlySubscription'){
@@ -32,5 +32,5 @@ function signIn() {
 
   }
 
-
-  
+var userName = JSON.parse(localStorage.getItem('userName')) || 'Rampukar';
+document.querySelector('#userName').innerText = userName;

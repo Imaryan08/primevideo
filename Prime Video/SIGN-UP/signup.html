@@ -14,13 +14,33 @@
         <!-- <div class="logo"> -->
             <img onclick='homePage()' src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/avod/AV_Logo_150._CB430404026_.png" alt="logo">
         <!-- </div> -->
+         
+        <!-- Warning popup -->
+        <header class='errorBox'>
+            <div class="error">
+                <p>
+                    <i class='fas fa-exclamation-triangle' style='font-size:25px;color:#c40000'></i>
+                </p>
+
+                <span>
+                    <h4>There was a problem</h4>
+                    <ul class='errorList'>
+                        <li class='nameErr'><i class="fa fa-circle" style="font-size:5px; color:black;"></i><span  class='list'>Enter your Name</span></li>
+                        <li class='emailErr'><i class="fa fa-circle" style="font-size:5px; color:black;"></i><span  class='list'>Enter your email</span></li>
+                        <li class='passErr'><i class="fa fa-circle" style="font-size:5px; color:black;"></i><span  class='list'>Enter your password</span></li>
+                        <li class='passShortErr'><i class="fa fa-circle" style="font-size:5px; color:black;"></i><span  class='list'>Password is too short</span></li>
+                        <li class='rePassErr'><i class="fa fa-circle" style="font-size:5px; color:black;"></i><span  class='list'>Password must match</span></li>
+                    </ul>
+                </span>
+            </div>  
+        </header>
 
         <!-- Signin Box -->
         <div class="signInBox">
             <h1>Create account</h1>
             <div class="input email">
-                <label for="email" class='inputText'>Your name</label>
-                <input type="text" name="email" class='data' id="email">
+                <label for="name" class='inputText'>Your name</label>
+                <input type="text" name="email" class='data' id="name">
             </div>
             <div class="input email">
                 <label for="email" class='inputText'>Email or mobile phone number</label>
@@ -39,11 +59,11 @@
                 <div class="passLabel">
                     <label for="password" class='inputText'>Re-enter Password</label>
                 </div>
-                <input type="password" name="password" class='data' id="password">
+                <input type="password" name="password" class='data' id="reEnterPass">
             </div>
 
             <div class="btn">
-                <button type='submit' class='signInBtn'>Create your Amazon account</button>
+                <button type='submit' class='signInBtn createAccBtn'>Create your Amazon account</button>
             </div>
 
             <div class="terms"> 
