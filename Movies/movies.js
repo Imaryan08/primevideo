@@ -1,3 +1,6 @@
+var userName = JSON.parse(localStorage.getItem('userName')) || 'Ram';
+document.querySelector('#userName').innerText = userName;
+
 var likeController = document.querySelectorAll(".likeController");
   var likePics = document.getElementsByClassName("L");
   var l=0;
