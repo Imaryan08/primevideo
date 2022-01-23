@@ -33,4 +33,4 @@ function signIn() {
   }
 
 var userName = JSON.parse(localStorage.getItem('userName')) || 'Rampukar';
-document.querySelector('#userName').innerText = userName;
+document.querySelector('#userName').innerHTML = `${userName} <i class="fas fa-caret-down arrowDown langBtn"></i>`;
