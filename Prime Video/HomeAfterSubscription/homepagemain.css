@@ -1,0 +1,144 @@
+body {
+    background-color: #0f171e;
+    /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+    font-family: Amazon Ember,Amazon Arabic Ember,Arial,sans-serif!important;
+    list-style-type:none;
+  }
+  .navbar-dark{
+    display: flex;
+    background-image: linear-gradient(to right,#1e2933,#1e2933);
+    height: 75px;
+}
+  .box{
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border: 1px double rgb(97, 95, 95);
+    align-items: center;
+    padding-left: 10px;
+  
+  }
+  .box input{
+    height: 38px;
+    background-color: #1e2933;
+    font-size: 18px;
+    border: none;
+    outline: none;
+  }
+  
+.carousel-indicators li {
+  border-radius: 14px;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(102, 102, 102);
+  opacity: 0.7;
+}
+.carousel-indicators li:hover {
+  cursor: pointer;
+}
+main {
+  width: 100%;
+  height: 220px;
+  margin: 25px auto;
+  overflow: hidden;
+  position: relative;
+}
+h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.double-slide .Controller{
+position: absolute;
+  top: 60%;
+  font-size: 90px;
+  color: white;
+  cursor: pointer;
+  left: .5%;
+  z-index: 1;
+}
+.Controller {
+  position: absolute;
+  top: 15%;
+  font-size: 90px;
+  color: white;
+  cursor: pointer;
+  left: .5%;
+  z-index: 1;
+}
+.Controller:nth-of-type(2) {
+  left: 98%;
+  text-align: right;
+}
+section {
+  width: 98%;
+  height: 180px;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
+section::-webkit-scrollbar {
+  visibility: hidden;
+}
+section div {
+  min-width: 280px;
+  height: 160px;
+  position: relative;
+  text-align: center;
+  left: 0;
+  margin: 0px 5px 0px 20px;
+  transition: 0.5s;
+}
+section div img {
+  width: 100%;
+  border-radius: 3px;
+}
+.Language section {
+height: 250px;
+width: 280px;
+width: 98%;
+display: flex;
+justify-content: left;
+overflow-x: auto;
+}
+.Language section div{
+min-width: 200px;
+height: 160px;
+}
+.Language section div img {
+  width: 100%;
+  height:100%;
+  border-radius: 3px;
+}
+
+footer{
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo > div{
+  text-align: center;
+}
+#footerImage{
+  width: 110px;
+  height: 35px;
+  object-fit: contain;
+  text-align: center;
+}
+#copyright{
+display: flex;
+margin: 2px 3px;
+opacity: 0.7;
+}
+#copyright > p > a{
+  color: #0f79af;
+  font-size: 15px;
+}
+#copyright > p{
+color: #949494;
+margin-left: 8px;
+margin-bottom: 20px;
+}

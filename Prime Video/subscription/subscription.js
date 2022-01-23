@@ -92,7 +92,7 @@ function proceed(){
     while(otp !== '9637415465465'){
         if(otp === '963741'){
             alert(`Paymemnt is Successful!! We have received your payment ${userName}, Thank you and Enjoy watching amazon prime `);
-            window.location.href = '/tvshows/tvShows.html';
+            window.location.href = '/HomeAfterSubscription/homepagemain.html';
             break;
         }else if(otp == 'null' || otp == '' || otp == null){
             break;
