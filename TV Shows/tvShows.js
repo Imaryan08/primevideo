@@ -2,6 +2,10 @@
          var userName = JSON.parse(localStorage.getItem('userName')) || 'Ram';
          document.querySelector('#userName').innerText = userName;
 
+         document.querySelector('#signOut').addEventListener('click',function(){
+          window.location.href = '/HOME/index.html';
+       });
+
 var likeController = document.querySelectorAll(".likeController");
   var likePics = document.getElementsByClassName("L");
   var l=0;
