@@ -24,6 +24,7 @@
     height: 70px;
     object-fit: cover;
     width: 150px;
+    cursor: pointer;
   }
   .rightMenu {
     padding: 15px;

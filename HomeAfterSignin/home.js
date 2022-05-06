@@ -2,6 +2,9 @@ function signIn() {
     window.location.href = "/SIGN-IN/signin.html";
   }
   
+function index() {
+  window.location.href = "./home.html";
+}
   var favChannels = JSON.parse(localStorage.getItem("favChannels"));
   
   favChannels.map(function (elem, index) {

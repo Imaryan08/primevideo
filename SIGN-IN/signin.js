@@ -3,7 +3,7 @@ function signupPage(){
 }
 
 function homePage(){
-    window.location.href = '/HOME/index.html';
+    window.location.href = '/index.html';
 } 
 
 // login validation
